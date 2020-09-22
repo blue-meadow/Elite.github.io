@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header class="nav">
+        <div class="ham" id="ham" onclick="openSideBar();">
+            <span><img src="svg/ham.svg" alt="ham">
+            </span>
+        </div>
+        <div class="clear">
+            <span><img src="svg/clear.svg" alt="ham" onclick="closeSideBar();">
+            </span>
+        </div>
+        <div class="logo"><img src="svg/logo.svg" alt=""></div>
+        <div class="links">
+            <li>
+                <a href="">HOME</a>
+                <a href="">BOTS</a>
+                <a href="">BUY</a>
+                <a href="">ABOUT</a>
+                <a href=""><img src="" alt="img"></a>
+            </li>
+        </div>
+    </header>
+    <!-- sidbar -->
+    <div class="sidebar">
+        <div class="link_box">
+            <li><a href="#main" onclick="home(),hideSide();" >Home</a></li>
+            <li><a href="#products" onclick="products(),hideSide();">Products</a></li>
+            <li><a href="#kits" onclick="kits(),hideSide();">Kits</a></li>
+            <li><a href="">About</a></li>
+        </div>
+      
+    </div>
+
+    <!-- MAIN BODY -->
+    <div class="main" id="main">
+
+        <!-- container for heading and subheading -->
+
+        <div class="main_container">
+            <div class="heading">
+                <h1>Innovation! <br>
+                    Key of success.
+                </h1>
+            </div>
+            <div class="subheading">
+                <p>Our product make your daily life easier and more secure.
+                </p>
+            </div>
+        </div>
+
+        <!-- svg image -->
+        <div class="illustration">
+            <img src="svg/illustration.svg" alt="">
+        </div>
+
+        <div class="button_container">
+            <button id="products_btn" onclick="products(),closeSideBar();">
+                Products
+            </button>
+            <button id="learnmore_btn">
+                Learn more
+            </button>
+        </div>
+         <!-- footer -->
+    <div class="footer">
+        <h4>All right reserved ELITE.</h4>
+    </div>
+      
+    </div>
+
+    <!-- product page -->
+    <div class="products" id="products">
+        <div class="product_heading">
+            <h2>Products</h2>
+        </div>
+        <div class="product_container">
+            <div class="rak">
+                <h1>Rakshak</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+            </div>
+            <div class="dristi">
+                <h1>Dristi</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- kits page -->
+    <div class="kits" id="kits">
+        <div class="kits_heading">
+            <h2>Kits</h2>
+        </div>
+        <div class="kits_container">
+            <div class="kit_one">
+                <h1>Automated Street light</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's. </p>
+            </div>
+            <div class="kit_two">
+                <h1>Water level alarm</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+            </div>
+            <div class="kit_three">
+                <h1>Fire Alarm Kit</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+            </div>
+            <div class="kit_four">
+                <h1>Light censor</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+            </div>
+            <div class="kit_five">
+                <h1>Air censor</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
