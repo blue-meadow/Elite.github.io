@@ -82,5 +82,22 @@ function getViewportDimensions() {
 
   }
 
+  function about()
+  {
+    var about = document.querySelector('.about');
+    about.style.display   = "inline";
+    about.classList.add('aboutActive');
+  }
+
+ function stop(){
+  var about = document.querySelector('.about');
+  about.classList.remove('aboutActive');
+  about.style.display = "none";
+ }
+
+ function msg(){
+   alert("Available Soon!");
+ }
+
   
   

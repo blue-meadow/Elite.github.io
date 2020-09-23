@@ -540,6 +540,121 @@
   margin-top: 10px;
 }
 
+.about {
+  display: none;
+}
+
+.aboutActive {
+  height: 440px;
+  width: 50%;
+  background-color: #0D5687;
+  color: #fff;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  top: 25%;
+  left: 30%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 8px;
+  display: none;
+  -webkit-animation: animate all 2s ease-in-out linear infinite;
+          animation: animate all 2s ease-in-out linear infinite;
+}
+
+.aboutActive p {
+  font-weight: 350;
+  margin-top: 15px;
+}
+
+.aboutActive h3 {
+  margin-top: 10px;
+}
+
+.aboutActive h2 {
+  margin-top: 10px;
+}
+
+.aboutActive .close {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.aboutActive .close img {
+  height: 22px;
+}
+
+.aboutActive .close:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+@-webkit-keyframes animate {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes animate {
+  to {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.rak_about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 22px;
+}
+
+.rak_about button {
+  height: 35px;
+  width: 92px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #0D5687;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 @media all and (min-width: 600px) {
   .heading {
     font-size: 35px;
@@ -586,6 +701,15 @@
     font-size: 22px;
     margin: 10px;
     color: white;
+  }
+  .links span {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
   }
 }
 

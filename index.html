@@ -23,8 +23,9 @@
                 <a href="" onclick="home(),hideSide();" >Home</a>
                 <a href="#products" onclick="products(),hideSide();">Products</a>
                 <a href="#kits" onclick="kits(),hideSide();">Kits</a>
-                <a href="">ABOUT</a>
-                <a href=""><img src="" alt="img"></a>
+                <span onclick="about();">About</span>
+                
+                
             </li>
         </div>
     </header>
@@ -51,7 +52,7 @@
                 </h1>
             </div>
             <div class="subheading">
-                <p>Our product make your daily life easier and more secure.
+                <p>Tech that makes your life easier...
                 </p>
             </div>
         </div>
@@ -82,7 +83,12 @@
             <div class="rak">
                 <h1>Rakshak</h1>
                 <p>"Rakshak" is a wrist safety band. It has a panic button that enables on double click and send your exact location to parent mobile.</p>
+                <div class="rak_about">
+                    <button>Know more</button>
+                    <button onclick="msg();">Buy</button>
+                </div>
             </div>
+            
             <!-- <div class="dristi">
                 <h1>Dristi</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a </p>
@@ -102,22 +108,38 @@
             </div>
             <div class="kit_two">
                 <h1>Water level alarm</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
+                <p>The water level alarm circuit is a simple mechanism to detect and indicate the level of water in the overhead tank and also in the other containers.</p>
             </div>
             <div class="kit_three">
                 <h1>Fire Alarm Kit</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+                <p>Fire Alarm Circuit is a simple circuit that detects the fire and activates the Siren Sound or Buzzer. Fire Alarm Circuits are very important devices to detect fire in the right time and prevent any damage to people or property.</p>
             </div>
             <div class="kit_four">
-                <h1>Light censor</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+                <h1>Hime Automation</h1>
+                <p>This is a very simple lights project on automatic room lights, where Arduino and PIR sensor automatically turn on and off the room lights.</p>
             </div>
             <div class="kit_five">
-                <h1>Air censor</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since  </p>
+                <h1>Obsta cle avoiding robo</h1>
+                <p>We made this project using arduino. Obstacle avoiding robot can run continuously without hitting any obstacle. Its based on Arduino. We have used an ultrasonic sensor in this project to detect the obstacles.</p>
             </div>
         </div>
     </div>
-         <!-- footer -->
+         <!-- about page -->
+         <div class="about" id="about">
+             <div class="close" id="close" onclick="stop();">
+                 <img src="svg/clear.svg" alt="" >
+             </div>
+             <h2>About</h2>
+             <p>
+                Elite is wonderful team that have participated in HACKETHON 2020 organized by EdgeFx technologies in coordination with Gaya college of engineering, Gaya.
+             </p>
+           <h2>Team Members-</h2>
+           <h3> Gautam Kumar  </h3>
+           <p>2nd year , Electrical & electronics engineering <br>
+            Gaya college of engineering,Gaya</p>
+            <h3>  Sanjeet kumar</h3>
+            <p>  2nd year , Electrical & electronics engineering <br>
+                Gaya college of engineering ,Gaya</p>
+         </div>
 </body>
 </html>
