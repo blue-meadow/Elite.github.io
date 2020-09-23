@@ -96,7 +96,7 @@ function getViewportDimensions() {
  }
 
  function msg(){
-   alert("Available Soon!");
+   alert("Coming Soon!");
  }
 
   

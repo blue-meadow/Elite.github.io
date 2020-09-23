@@ -265,9 +265,15 @@ $fontFamily:'Montserrat', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         padding: 30px;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+
+       
         .kit_one{
+            margin: 15px;
             height: 240px;
             width: 360px;
             background-color: #fff;
@@ -290,7 +296,7 @@ $fontFamily:'Montserrat', sans-serif;
 
         }
         .kit_two{
-            margin-top: 15px;
+            margin-left: 15px;
             height: 240px;
             width: 360px;
             background-color: #fff;
@@ -313,7 +319,7 @@ $fontFamily:'Montserrat', sans-serif;
 
         }
         .kit_three{
-            margin-top: 15px;
+            margin-left: 15px;
             height: 240px;
             width: 360px;
             background-color: #fff;
@@ -336,7 +342,7 @@ $fontFamily:'Montserrat', sans-serif;
 
         }
         .kit_four{
-            margin-top: 15px;
+            margin-left: 15px;
             height: 240px;
             width: 360px;
             background-color: #fff;
@@ -359,7 +365,7 @@ $fontFamily:'Montserrat', sans-serif;
 
         }
         .kit_five{
-            margin-top: 15px;
+            margin-left: 15px;
             height: 240px;
             width: 360px;
             background-color: #fff;
@@ -430,14 +436,7 @@ $fontFamily:'Montserrat', sans-serif;
     }
 }
 
-@keyframes animate{
-    to{
-        transform: scale(0);
-    }
-    from{
-        transform: scale(1);
-    }
-}
+
 
 .rak_about{
     
@@ -506,21 +505,79 @@ font-size: 25px;
             margin: 10px;
             color: white;
         }
-        span{
-            font-family: $fontFamily;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 22px;
-            margin: 10px;
-            color: white;
-            cursor: pointer;
-        }
+       
 
     }
+}
+.ab{
+    font-family: $fontFamily;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+#ab{
+    position: absolute;
+    top: 199px;
+    font-size: 26px;
+            font-family: $fontFamily;
+            color: white;
+            font-weight: 800;
+          padding-left: 14px;
+            text-decoration: none;
+           
 }
 @media all and (max-width:600px){
     .links{
         display: none;
         
     }
+    .aboutActive{
+       
+       width: 300px;
+       left: 40px;
+        background-color: $primary;
+        color: #fff;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        
+        
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        flex-direction: column;
+       
+        font-family: $fontFamily;
+        border-radius: 8px;
+        display: none;
+        animation: animate all 2s ease-in-out linear infinite;
+        p{
+            font-weight: 350;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        h2{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    
+        .close{
+            position: absolute;
+            right: 20px;
+            img{
+                height: 22px;
+            }
+            cursor: pointer;
+        }
+        .close:hover{
+            transform: scale(1.2);
+            transition: all 0.2s ease-out;
+        }
+    }
+
 }
