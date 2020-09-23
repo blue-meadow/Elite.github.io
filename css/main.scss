@@ -36,9 +36,7 @@ $fontFamily:'Montserrat', sans-serif;
             height: 40px;
         }
     }
-    .links{
-        display: none;
-    }
+   
 }
 .sidebar
 {
@@ -84,7 +82,7 @@ $fontFamily:'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     height: calc(var(--vh, 1vh) * 100);
-    .main_container{
+    justify-content: space-between;
         display: flex;
         flex-direction: column;
         padding:40px;
@@ -116,10 +114,11 @@ $fontFamily:'Montserrat', sans-serif;
     }
     .button_container{
         display: flex;
-        padding: 40px;
+        padding: 10px;
         #learnmore_btn{
             height: 32px;
             width: 95px;
+            min-width: 110px;
             margin-left: 36px;
             font-family: $fontFamily;
             font-weight: 700;
@@ -132,6 +131,7 @@ $fontFamily:'Montserrat', sans-serif;
         #products_btn{
             height: 32px;
             width: 95px;
+            min-width: 110px;
             font-family: $fontFamily;
             font-weight: 700;
             background-color: $primary;
@@ -141,10 +141,13 @@ $fontFamily:'Montserrat', sans-serif;
             border-radius: 4px;
         }
     }
-}
+
 
 // foooter
 .footer{
+    position: absolute;
+    bottom: 0px;
+    background-color: RED;
     z-index: -1;
     display: flex;
     justify-content: center;
@@ -378,5 +381,59 @@ $fontFamily:'Montserrat', sans-serif;
             }
 
         }
+    }
+}
+
+// media querry
+
+@media all and (min-width: 600px){
+    .heading{
+font-size: 35px;
+
+    }
+    .subheading{
+font-size: 25px;
+    }
+    .ham{
+        opacity: 0;
+        pointer-events: none;
+    }
+    .clear{
+        pointer-events: none;
+        opacity: 0;
+    }
+    .illustration{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        img{
+            height: 300px;
+        }
+    }
+    .nav{
+        display: flex;
+        
+    }
+    .links{
+        display: inline;
+        position: absolute;
+        right: 16px;
+        list-style-type: none;
+        li a{
+            font-family: $fontFamily;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 22px;
+            margin: 10px;
+            color: white;
+        }
+
+    }
+}
+@media all and (max-width:600px){
+    .links{
+        display: none;
+        
     }
 }
