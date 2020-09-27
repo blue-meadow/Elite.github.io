@@ -50,6 +50,8 @@ function getViewportDimensions() {
     var product = document.querySelector('.products');
     product.style.display = "block";
     var kits = document.querySelector(".kits");
+    var quad_page = document.getElementById("quad");
+   quad_page.style.display = "none";
     kits.style.display   = "none";
    closeSideBar();
   }
@@ -58,6 +60,8 @@ function getViewportDimensions() {
     main.style.display = "block";
     var product = document.querySelector('.products');
     product.style.display = "none";
+    var quad_page = document.getElementById("quad");
+   quad_page.style.display = "none";
     var kits = document.querySelector(".kits");
     kits.style.display   = "none";
     closeSideBar();
@@ -68,6 +72,8 @@ function getViewportDimensions() {
     main.style.display = "none";
     var product = document.querySelector('.products');
     product.style.display = "none";
+    var quad_page = document.getElementById("quad");
+   quad_page.style.display = "none";
     var kits = document.querySelector(".kits");
     kits.style.display   = "block";
     closeSideBar();
@@ -97,6 +103,13 @@ function getViewportDimensions() {
 
  function msg(){
    alert("Coming Soon!");
+ }
+
+ function quad_page(){
+   var quad_page = document.getElementById("quad");
+   quad_page.style.display = "flex";
+   var product = document.getElementById('products');
+   product.style.display = "none";
  }
 
   

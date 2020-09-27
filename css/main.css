@@ -243,23 +243,23 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 30px;
 }
 
 .products .product_container .rak {
-  height: 240px;
-  width: 360px;
+  padding: 10px;
+  height: 400px;
+  width: 660px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -273,6 +273,7 @@
   text-align: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
 }
 
 .products .product_container .rak h1 {
@@ -280,7 +281,7 @@
 }
 
 .products .product_container .rak p {
-  margin-top: 10px;
+  margin-top: clamp(1rem, 4vw, 3rem);
 }
 
 .products .product_container .dristi {
@@ -636,6 +637,106 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   cursor: pointer;
+}
+
+.quad_page {
+  padding-top: 150px;
+  display: none;
+  color: #0D5687;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.quad_page .quad_heading {
+  padding: 20px;
+}
+
+.quad_page .quad_heading h2 {
+  margin-left: 290px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+}
+
+.quad_page .quad_box {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+}
+
+.quad_page .quad_box .quad_image {
+  width: 200px;
+}
+
+.quad_page .quad_box .quad_image img {
+  height: 400px;
+}
+
+.quad_page .quad_box .quad_info {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quad_page .quad_box .quad_info p {
+  margin: 70px;
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+#aurduino {
+  padding: 90px;
+}
+
+#aurduino img {
+  height: 200px;
+}
+
+#rds {
+  margin-left: 90px;
+}
+
+#mp {
+  padding: 90px;
+}
+
+#mp img {
+  height: 200px;
+}
+
+#esc {
+  padding-top: 60px;
+  padding-left: 80px;
+}
+
+#esc img {
+  height: 200px;
+}
+
+#blm {
+  padding-top: 45px;
+  padding-left: 80px;
+}
+
+#blm img {
+  height: 200px;
+}
+
+#quad_box {
+  height: 400px;
 }
 
 @media all and (min-width: 600px) {

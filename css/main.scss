@@ -187,15 +187,16 @@ $fontFamily:'Montserrat', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        flex-direction: row;
         padding: 30px;
-    
+
         .rak{
-            height: 240px;
-            width: 360px;
+            padding: 10px;
+            height: 400px;
+            width: 660px;
             background-color: #fff;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             border-radius: 4px;
             flex-direction: column;
@@ -203,12 +204,13 @@ $fontFamily:'Montserrat', sans-serif;
             color: $primary;
             text-align: center;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
             h1{
                 font-weight: 800;
             }
             
             p{
-                margin-top: 10px;
+                margin-top: clamp(1rem, 4vw, 3rem);
             }
         }
         .dristi{
@@ -460,7 +462,81 @@ $fontFamily:'Montserrat', sans-serif;
     }
 }
 
+.quad_page
+{
+    
+    padding-top: 150px;
+    display: none;
+    color: $primary;
+    flex-direction: column;
+    .quad_heading{
+      
+        padding: 20px;
+        h2{
+            margin-left: 290px;
+            font-family: $fontFamily;
+            font-size: 2.8rem;
+        }
+    }
+    .quad_box{
+        height: 300px;
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        padding: 10px;
+        .quad_image{
+            width: 200px;
+            img{
+                height: 400px;
+            }
+        }
+        .quad_info{
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            p{
+                margin: 70px;
+                font-family: $fontFamily;
+                font-size: clamp(1rem, 2.5vw, 1.5rem);
+            }
+        }
+    }
+}
 
+#aurduino{
+    padding: 90px;
+    img{
+        height: 200px;
+    }
+}
+#rds{
+    margin-left: 90px;
+}
+#mp{
+    padding: 90px;
+    img{
+        height: 200px;
+    }
+}
+#esc{
+    padding-top: 60px;
+    padding-left: 80px;
+    img{
+        height: 200px;
+    }
+}
+#blm{
+    padding-top: 45px;
+    padding-left: 80px;
+    img{
+        height: 200px;
+    }
+}
+#quad_box{
+    height: 400px;
+}
 // media querry
 
 @media all and (min-width: 600px){
