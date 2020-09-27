@@ -640,7 +640,7 @@
 }
 
 .quad_page {
-  padding-top: 150px;
+  padding-top: 120px;
   display: none;
   color: #0D5687;
   -webkit-box-orient: vertical;
@@ -737,6 +737,38 @@
 
 #quad_box {
   height: 400px;
+}
+
+#quad_box_application {
+  width: 100%;
+  margin-left: 30px;
+}
+
+#download {
+  background-color: #0D5687;
+  color: white;
+  height: 100px;
+  width: 370px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+#footer_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: #838383;
 }
 
 @media all and (min-width: 600px) {

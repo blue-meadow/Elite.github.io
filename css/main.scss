@@ -464,8 +464,8 @@ $fontFamily:'Montserrat', sans-serif;
 
 .quad_page
 {
-    
-    padding-top: 150px;
+
+    padding-top: 120px;
     display: none;
     color: $primary;
     flex-direction: column;
@@ -536,6 +536,30 @@ $fontFamily:'Montserrat', sans-serif;
 }
 #quad_box{
     height: 400px;
+}
+
+#quad_box_application{
+    width: 100%;
+    margin-left: 30px;
+}
+#download{
+    background-color: $primary;
+    color: white;
+    height: 100px;
+    width: 370px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-family: $fontFamily;
+    cursor: pointer;
+}
+#footer_head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontFamily;
+    color: #838383;
 }
 // media querry
 
